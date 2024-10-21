@@ -1,0 +1,62 @@
+[
+    {
+      "title": "Message from user123",
+      "content": "Hey, how are you doing today?",
+      "received": "10 minutes ago"
+    },
+    {
+      "title": "Message from DwightSchrute",
+      "content": "Fact: Bears eat beets.",
+      "received": "6 hours ago"
+    },
+    {
+      "title": "Message from SaulGoodman",
+      "content": "Better call me if you need legal advice!",
+      "received": "5 hours ago"
+    },
+    {
+      "title": "Message from friend",
+      "content": "Do you have any book recommendations?",
+      "received": "1 day ago"
+    },
+    {
+      "title": "Message from JimHalpert",
+      "content": "Hey, wanna pull a prank on Dwight later?",
+      "received": "8 minutes ago"
+  },
+  {
+      "title": "Message from MichaelScott",
+      "content": "World's Best Boss! What's up?",
+      "received": "15 minutes ago"
+  },
+  {
+      "title": "Message from WalterWhite",
+      "content": "I am the one who knocks!",
+      "received": "1 hour ago"
+  },
+  {
+      "title": "Message from JessePinkman",
+      "content": "Yo! Science is dope, right?",
+      "received": "2 hours ago"
+  },
+  {
+      "title": "Message from PamBeesly",
+      "content": "Do you think I should bring more snacks to the office?",
+      "received": "3 hours ago"
+  },
+  {
+      "title": "Message from HankSchrader",
+      "content": "Found any cool minerals lately?",
+      "received": "12 hours ago"
+  },
+  {
+      "title": "Message from StanleyHudson",
+      "content": "Did I stutter?",
+      "received": "1 day ago"
+  },
+  {
+      "title": "Message from GustavoFring",
+      "content": "Would you like a job opportunity at Los Pollos Hermanos?",
+      "received": "2 days ago"
+  }
+]

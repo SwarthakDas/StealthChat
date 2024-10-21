@@ -118,8 +118,9 @@ const Page = () => {
 
   const username = session?.user?.username ?? undefined;
   
-  const baseUrl= `${window.location.protocol}//${window.location.host}`
-  const profileUrl=`${baseUrl}/u/${username}`
+  const baseUrl = typeof window !== "undefined" ? `${window.location.protocol}//${window.location.host}` : "";
+const profileUrl = username ? `${baseUrl}/u/${username}` : "";
+
 
   const copyToClipboard= ()=>{
     navigator.clipboard.writeText(profileUrl)

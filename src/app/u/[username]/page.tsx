@@ -6,13 +6,11 @@ import { Button } from "@/components/ui/button"
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
   FormMessage,
 } from "@/components/ui/form"
-import { Input } from "@/components/ui/input"
 import { messageSchema } from "@/schemas/messageSchema"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useState } from "react"
@@ -36,7 +34,7 @@ const parseStringMessages = (messageString: string): string[] => {
 const initialMessageString =
   "What's your favorite movie?||Do you have any pets?||What's your dream job?";
 
-const page = () => {
+const Page = () => {
   const params= useParams<{username: string}>();
   const username= params.username;
 
@@ -176,4 +174,4 @@ const onSubmit= async (data: z.infer<typeof messageSchema>)=>{
   )
 }
 
-export default page
+export default Page

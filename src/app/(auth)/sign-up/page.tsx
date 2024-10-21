@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form"
 import * as z from "zod"
 import Link from "next/link"
 import { useEffect, useState } from "react"
-import { useDebounceValue,useDebounceCallback } from 'usehooks-ts'
+import { useDebounceCallback } from 'usehooks-ts'
 import { useToast } from "@/hooks/use-toast"
 import { useRouter } from "next/navigation"
 import { signUpSchema } from "@/schemas/signUpSchema"
@@ -16,7 +16,7 @@ import { Button } from "@/components/ui/button"
 import { Loader2 } from "lucide-react"
 
 
-const page = () => {
+const Page = () => {
   const [username,setUsername]= useState('')
   const [usernameMessage,setUsernameMessage]=useState('')
   const [isCheckingUsername,setIsCheckingUsername]= useState(false)
@@ -69,7 +69,7 @@ const page = () => {
     } catch (error) {
       console.error("Error user sign up",error)
       const axiosError= error as AxiosError<ApiResponse>
-      let errorMessage= axiosError.response?.data.message
+      const errorMessage= axiosError.response?.data.message
       toast({
         title: "sign up failed",
         description: errorMessage,
@@ -163,4 +163,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

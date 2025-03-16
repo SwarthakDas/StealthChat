@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <nav className='p-4 md:p-6 shadow-md w-full'>
         <div className='container mx-auto flex flex-col justify-between'>
-            <a className='text-2xl font-bold m-2 md:mb-0' href="">StealthChat</a>
+        {session?(<p className='text-2xl font-bold m-2 md:mb-0'>StealthChat</p>):(<Link href='/'><p className='text-2xl font-bold m-2 md:mb-0' >StealthChat</p></Link>)}
             {
                 session?(
                     <>

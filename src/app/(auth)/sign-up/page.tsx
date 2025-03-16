@@ -64,7 +64,7 @@ const Page = () => {
         title:'Success',
         description: response.data.message
       })
-      router.replace(`/verify/${username}`)
+      router.replace(`/sign-in`)
       setIsSubmitting(false)
     } catch (error) {
       console.error("Error user sign up",error)
